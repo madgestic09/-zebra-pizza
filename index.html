@@ -97,7 +97,7 @@ async function submitOrder(){
  const items=cart.map(x=>({name:pizzas[x.i][0],size:x.s,quantity:x.q,lineTotal:prices[x.s]*x.q}));
  const button=document.querySelector('#form .checkout'); if(button){button.disabled=true;button.textContent='ОТПРАВЛЯЕМ...';}
  try{
-   const r=await fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:n,phone:p,address:a,comment:c,items,subtotal:sub,delivery:del,total,orderNumber:num})});
+   const r=await fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({customer:n,phone:p,address:a,comment:c,items,subtotal:sub,delivery:del,total,orderNumber:num})});
    const data=await r.json();
    if(!r.ok||!data.ok) throw new Error(data.error||'Не удалось отправить заказ');
    const list=items.map(x=>`${x.name} · ${x.size} см × ${x.quantity}`).join('<br>');

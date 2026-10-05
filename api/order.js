@@ -16,9 +16,12 @@ export default async function handler(req, res) {
       subtotal,
       delivery,
       total,
-      orderNumber
+      orderNumber,
+      personalDataConsent,
+      consentAt
     } = req.body || {};
 
+    // Проверяем обязательные данные заказа
     if (
       !customer ||
       !phone ||
@@ -29,6 +32,14 @@ export default async function handler(req, res) {
       return res.status(400).json({
         ok: false,
         error: "Заполните имя, телефон, адрес и добавьте товар."
+      });
+    }
+
+    // Проверяем согласие на обработку персональных данных
+    if (personalDataConsent !== true || !consentAt) {
+      return res.status(400).json({
+        ok: false,
+        error: "Не получено согласие на обработку персональных данных."
       });
     }
 
@@ -65,7 +76,10 @@ export default async function handler(req, res) {
       `👤 ${customer}`,
       `📞 ${phone}`,
       `📍 ${address}`,
-      comment ? `💬 ${comment}` : ""
+      comment ? `💬 ${comment}` : "",
+      "",
+      "✅ Согласие на обработку персональных данных получено",
+      `🕐 Время согласия: ${consentAt}`
     ]
       .filter(Boolean)
       .join("\n");
@@ -96,6 +110,7 @@ export default async function handler(req, res) {
     return res.status(200).json({
       ok: true
     });
+
   } catch (error) {
     console.error(error);
 

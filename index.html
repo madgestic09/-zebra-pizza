@@ -27,7 +27,9 @@ overflow:hidden}.hero-visual:before{content:"";position:absolute;width:620px;hei
 .delivery{background:var(--soft);border-top:2px solid var(--black);border-bottom:2px solid var(--black)}.delivery-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.delivery-box{border:2px solid var(--black);border-radius:22px;padding:30px;background:var(--white)}.delivery-list{display:grid;gap:16px;margin:25px 0}.delivery-item{display:flex;gap:14px;align-items:flex-start}.delivery-item .dicon{width:34px;height:34px;flex:none;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-weight:1000}.delivery-item b{display:block;margin-bottom:3px}.delivery-item span{color:var(--muted)}.mapbox{border-radius:22px;background:var(--black);color:var(--yellow);min-height:330px;display:grid;place-items:center;text-align:center;font-size:34px;font-weight:1000;position:relative;overflow:hidden}.mapbox:before,.mapbox:after{content:"";position:absolute;border:2px solid #333;border-radius:50%;width:240px;height:240px}.mapbox:after{width:430px;height:430px}.pin{position:relative;z-index:2;color:var(--white);font-size:16px;text-transform:uppercase;letter-spacing:2px}
 .footer{background:var(--black);color:var(--white);padding:60px clamp(20px,7vw,100px);display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer .muted{color:#aaa}.footer a{display:block;margin:10px 0;color:#ddd}.footer a:hover{color:var(--yellow)}
 .cart-panel{position:fixed;right:-500px;top:0;width:min(500px,100%);height:100vh;background:var(--white);z-index:80;border-left:3px solid var(--black);transition:right .25s;display:flex;flex-direction:column}.cart-panel.open{right:0}.cart-head{padding:18px 20px;border-bottom:2px solid var(--black);display:flex;justify-content:space-between;align-items:center;font-weight:1000}.close{border:0;background:var(--black);color:var(--white);width:38px;height:38px;border-radius:9px;font-size:24px}.cart-items{padding:20px;overflow:auto;flex:1}.cart-empty{text-align:center;color:var(--muted);padding:50px 20px}.cart-item{border-bottom:1px solid var(--line);padding:15px 0}.cart-row{display:flex;justify-content:space-between;gap:15px;font-weight:900}.qty{display:flex;gap:8px;align-items:center;margin-top:10px}.qty button{border:1px solid var(--black);background:var(--white);width:30px;height:30px;border-radius:7px}.cart-foot{border-top:2px solid var(--black);padding:18px}.sum{display:flex;justify-content:space-between;font-size:18px;margin:8px 0}.sum.big{font-size:25px;font-weight:1000;margin-top:15px}.hint{font-size:13px;background:var(--yellow);padding:10px;border-radius:9px;margin:10px 0;font-weight:800}.checkout{width:100%;border:0;background:var(--yellow);padding:16px;border-radius:11px;font-weight:1000;margin-top:8px}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:90;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.form{width:min(620px,100%);max-height:92vh;overflow:auto;background:var(--white);border:3px solid var(--black);border-radius:22px;padding:26px}.form h2{font-size:34px;letter-spacing:-2px;margin:0 0 15px}.notice{background:var(--yellow);border-radius:10px;padding:12px;font-weight:900;margin-bottom:18px}.form label{font-weight:900}.form input,.form textarea{display:block;width:100%;border:2px solid var(--black);border-radius:10px;padding:12px;margin:7px 0 14px;outline:none}.form input:focus,.form textarea:focus{box-shadow:0 0 0 3px var(--yellow)}.cancel{width:100%;margin-top:8px;background:white;border:2px solid var(--black);border-radius:10px;padding:14px;font-weight:900}.product-modal{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:85;display:none;align-items:center;justify-content:center;padding:20px}.product-modal.open{display:flex}.product-card{width:min(520px,100%);background:var(--white);border:3px solid var(--black);border-radius:22px;padding:26px}.product-card h2{font-size:36px;letter-spacing:-2px;margin:0 0 8px}.product-card p{color:var(--muted);line-height:1.5}.size-choice{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}.size-choice button{border:2px solid var(--black);background:var(--white);border-radius:14px;padding:16px 10px;font-weight:1000}.size-choice button.active{background:var(--yellow)}.size-choice button span{display:block;font-size:13px;color:var(--muted);margin-top:4px}.product-price{font-size:30px;font-weight:1000;margin:10px 0 16px}.success{text-align:center;padding:25px}.success .z{font-size:70px}.order-list{background:#f5f5f5;border-radius:12px;padding:14px;text-align:left;margin:18px 0}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:90;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.form{width:min(620px,100%);max-height:92vh;overflow:auto;background:var(--white);border:3px solid var(--black);border-radius:22px;padding:26px}.form h2{font-size:34px;letter-spacing:-2px;margin:0 0 15px}.notice{background:var(--yellow);border-radius:10px;padding:12px;font-weight:900;margin-bottom:18px}.form label{font-weight:900}.form input,.form textarea{display:block;width:100%;border:2px solid var(--black);border-radius:10px;padding:12px;margin:7px 0 14px;outline:none}.form input:focus,.form textarea:focus{box-shadow:0 0 0 3px var(--yellow)}
+.consent{display:flex!important;align-items:flex-start;gap:10px;margin:2px 0 14px;font-size:13px;line-height:1.4;font-weight:700}.consent input{display:block!important;width:18px!important;height:18px!important;flex:none;margin:1px 0 0!important;padding:0!important;accent-color:var(--yellow)}.consent a{text-decoration:underline;text-underline-offset:2px}
+.cancel{width:100%;margin-top:8px;background:white;border:2px solid var(--black);border-radius:10px;padding:14px;font-weight:900}.product-modal{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:85;display:none;align-items:center;justify-content:center;padding:20px}.product-modal.open{display:flex}.product-card{width:min(520px,100%);background:var(--white);border:3px solid var(--black);border-radius:22px;padding:26px}.product-card h2{font-size:36px;letter-spacing:-2px;margin:0 0 8px}.product-card p{color:var(--muted);line-height:1.5}.size-choice{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}.size-choice button{border:2px solid var(--black);background:var(--white);border-radius:14px;padding:16px 10px;font-weight:1000}.size-choice button.active{background:var(--yellow)}.size-choice button span{display:block;font-size:13px;color:var(--muted);margin-top:4px}.product-price{font-size:30px;font-weight:1000;margin:10px 0 16px}.success{text-align:center;padding:25px}.success .z{font-size:70px}.order-list{background:#f5f5f5;border-radius:12px;padding:14px;text-align:left;margin:18px 0}
 @media(max-width:1100px){.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr}.hero-visual{min-height:560px}.hero-copy{padding-bottom:45px}.delivery-grid{grid-template-columns:1fr}.footer{grid-template-columns:1fr 1fr}}
 @media(max-width:700px){.nav{display:none}.header{height:64px}.hero-copy{padding:48px 20px}.hero h1{font-size:56px;letter-spacing:-4px}.hero-visual{min-height:420px}.hero-visual img{object-position:center top}.section{padding:60px 20px}.section-head{display:block}.grid,.sizes,.why,.footer{grid-template-columns:1fr}.grid{gap:12px}.pizza-photo{height:210px}.title{font-size:46px}.hero-meta{gap:15px}.actions{flex-direction:column}.actions .btn{width:100%}}
 </style>
@@ -42,7 +44,7 @@ overflow:hidden}.hero-visual:before{content:"";position:absolute;width:620px;hei
 <section class="section" id="why"><div class="section-head"><div><h2 class="title">ПОЧЕМУ ЗЕБРА?</h2><p class="subtitle">Простая идея: хорошая пицца без лишнего усложнения.</p></div></div><div class="why"><div class="why-card"><div class="icon">✓</div><b>Свежие ингредиенты</b><p>Понятный состав и качественные ингредиенты.</p></div><div class="why-card"><div class="icon">+</div><b>Много начинки</b><p>Пицца должна быть сытной и выглядеть аппетитно.</p></div><div class="why-card"><div class="icon">★</div><b>Готовим под заказ</b><p>Свежая пицца отправляется к тебе после приготовления.</p></div></div></section>
 <section class="section delivery" id="delivery"><div class="section-head"><div><h2 class="title">ДОСТАВКА ЗЕБРЫ</h2><p class="subtitle">Доставка по Санкт-Петербургу.</p></div></div><div class="delivery-grid"><div class="delivery-box"><div class="delivery-list"><div class="delivery-item"><div class="dicon">₽</div><div><b>150 ₽ доставка</b><span>Бесплатно от 850 ₽.</span></div></div><div class="delivery-item"><div class="dicon">1ч</div><div><b>Ориентировочно до 1 часа</b><span>Фактическое время зависит от загрузки.</span></div></div><div class="delivery-item"><div class="dicon">✓</div><div><b>Оплата при получении</b><span>Наличными или переводом.</span></div></div><div class="delivery-item"><div class="dicon">100</div><div><b>Минимальный заказ — 100 ₽</b><span>Все условия видны в корзине.</span></div></div></div><button class="btn yellow" onclick="openCart()">Оформить доставку →</button></div><div class="mapbox"><div><div>ДОСТАВКА</div><div>ПО САНКТ-ПЕТЕРБУРГУ</div><div class="pin">БЫСТРО · БЕРЕЖНО · ДО ДВЕРИ</div></div></div></div></section>
 </main>
-<footer class="footer"><div><div class="logo">ЗЕБРА<br><em>ПИЦЦА</em></div><p class="muted">Пицца · Доставка · Санкт-Петербург</p></div><div><b>Доставка</b><p class="muted">150 ₽<br>бесплатно от 850 ₽<br>до 1 часа</p></div><div><b>Информация</b><a href="#menu">Меню</a><a href="#delivery">Доставка</a><a href="#why">Почему Зебра</a></div></footer>
+<footer class="footer"><div><div class="logo">ЗЕБРА<br><em>ПИЦЦА</em></div><p class="muted">Пицца · Доставка · Санкт-Петербург</p></div><div><b>Доставка</b><p class="muted">150 ₽<br>бесплатно от 850 ₽<br>до 1 часа</p></div><div><b>Информация</b><a href="#menu">Меню</a><a href="#delivery">Доставка</a><a href="#why">Почему Зебра</a><a href="/privacy.html">Политика обработки персональных данных</a></div></footer>
 <aside class="cart-panel" id="cartPanel"><div class="cart-head">КОРЗИНА <button class="close" onclick="closeCart()">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-foot"><div class="sum"><span>Товары</span><span id="subtotal">0 ₽</span></div><div class="hint" id="deliveryHint" style="display:none"></div><div class="sum"><span>Доставка</span><span id="deliveryCost">—</span></div><div class="sum big"><span>Итого</span><span id="grand">0 ₽</span></div><button class="checkout" onclick="openCheckout()">ОФОРМИТЬ ЗАКАЗ</button></div></aside>
 <div class="product-modal" id="productModal" onclick="if(event.target===this)closeProduct()"><div class="product-card" id="productForm"></div></div><div class="modal" id="modal" onclick="if(event.target===this)closeCheckout()"><div class="form" id="form"></div></div>
 <script>
@@ -64,6 +66,7 @@ const pizzaImages=[
 const prices={22:390,32:590,42:750};
 let size=22,category='pizza',selectedPizza=null,cart=[];
 const categoryNames={pizza:'ПИЦЦЫ',combo:'КОМБО',roman:'РИМСКИЕ ПИЦЦЫ',snacks:'ЗАКУСКИ',drinks:'НАПИТКИ'};
+
 function render(){
  document.querySelectorAll('.category-tabs .tab').forEach(b=>b.classList.toggle('active',b.dataset.category===category));
  const grid=document.getElementById('grid');
@@ -79,36 +82,154 @@ function render(){
  }
  grid.innerHTML=pizzas.map((p,i)=>`<article class="card" onclick="openProduct(${i})"><div class="pizza-photo" aria-label="${p[0]}" style="background-image:url('${pizzaImages[i]}');background-size:cover;background-position:center"></div><h3>${p[0]}</h3><p>${p[1]}</p><div class="card-bottom"><div class="price">от ${prices[22]} ₽</div><button class="add" onclick="event.stopPropagation();openProduct(${i})">ВЫБРАТЬ РАЗМЕР</button></div></article>`).join('');
 }
+
 function openProduct(i){selectedPizza=i;size=22;renderProductModal();document.getElementById('productModal').classList.add('open')}
 function renderProductModal(){const p=pizzas[selectedPizza];document.getElementById('productForm').innerHTML=`<h2>${p[0]}</h2><p>${p[1]}</p><div class="size-choice">${[22,32,42].map(s=>`<button class="${size===s?'active':''}" onclick="selectSize(${s})">${s} см<span>${prices[s]} ₽</span></button>`).join('')}</div><div class="product-price">${prices[size]} ₽</div><button class="checkout" onclick="addSelected()">ДОБАВИТЬ В КОРЗИНУ</button><button class="cancel" onclick="closeProduct()">НАЗАД</button>`}
 function selectSize(s){size=s;renderProductModal()}
 function addSelected(){const x=cart.find(x=>x.i===selectedPizza&&x.s===size);x?x.q++:cart.push({i:selectedPizza,s:size,q:1});closeProduct();update();openCart()}
 function closeProduct(){document.getElementById('productModal').classList.remove('open')}
 function change(i,s,d){const x=cart.find(x=>x.i===i&&x.s===s);if(!x)return;x.q+=d;if(x.q<=0)cart=cart.filter(y=>y!==x);update()}
-function update(){const count=cart.reduce((a,x)=>a+x.q,0);const sub=cart.reduce((a,x)=>a+prices[x.s]*x.q,0);document.getElementById('count').textContent=count;document.getElementById('subtotal').textContent=sub+' ₽';const hint=document.getElementById('deliveryHint');if(sub>0&&sub<850){hint.style.display='block';hint.textContent=`Добавьте ещё ${850-sub} ₽ — и доставка будет бесплатной.`}else{hint.style.display='none'}const del=sub===0?0:(sub>=850?0:150);document.getElementById('deliveryCost').textContent=sub===0?'—':del?'150 ₽':'БЕСПЛАТНО';document.getElementById('grand').textContent=sub?(sub+del)+' ₽':'0 ₽';document.getElementById('cartItems').innerHTML=cart.length?cart.map(x=>`<div class="cart-item"><div class="cart-row"><span>${pizzas[x.i][0]} · ${x.s} см</span><span>${prices[x.s]*x.q} ₽</span></div><div class="qty"><button onclick="change(${x.i},${x.s},-1)">−</button><span>${x.q}</span><button onclick="change(${x.i},${x.s},1)">+</button></div></div>`).join(''):'<div class="cart-empty">Корзина пока пустая.<br>Выбери пиццу — зебра подождёт.</div>'}
-function openCart(){document.getElementById('cartPanel').classList.add('open');update()}function closeCart(){document.getElementById('cartPanel').classList.remove('open')}
-function formTemplate(){return `<h2>ОФОРМЛЕНИЕ ДОСТАВКИ</h2><div class="notice">150 ₽ · бесплатно от 850 ₽ · ориентировочно до 1 часа · оплата наличными или переводом при получении</div><label>Имя<input id="name" autocomplete="name" required></label><label>Телефон<input id="phone" type="tel" autocomplete="tel" required placeholder="+7 ..."></label><label>Адрес доставки<input id="address" autocomplete="street-address" required placeholder="Улица, дом, квартира"></label><label>Комментарий<textarea id="comment" rows="3" placeholder="Подъезд, домофон, этаж и т.п."></textarea></label><button class="checkout" onclick="submitOrder()">ЗАКАЗАТЬ</button><button class="cancel" onclick="closeCheckout()">ОТМЕНА</button>`}
-function openCheckout(){if(!cart.length){alert('Добавьте пиццу в корзину.');return}if(cart.reduce((a,x)=>a+prices[x.s]*x.q,0)<100){alert('Минимальная сумма заказа — 100 ₽.');return}document.getElementById('form').innerHTML=formTemplate();document.getElementById('modal').classList.add('open')}
+
+function update(){
+ const count=cart.reduce((a,x)=>a+x.q,0);
+ const sub=cart.reduce((a,x)=>a+prices[x.s]*x.q,0);
+ document.getElementById('count').textContent=count;
+ document.getElementById('subtotal').textContent=sub+' ₽';
+ const hint=document.getElementById('deliveryHint');
+ if(sub>0&&sub<850){hint.style.display='block';hint.textContent=`Добавьте ещё ${850-sub} ₽ — и доставка будет бесплатной.`}
+ else{hint.style.display='none'}
+ const del=sub===0?0:(sub>=850?0:150);
+ document.getElementById('deliveryCost').textContent=sub===0?'—':del?'150 ₽':'БЕСПЛАТНО';
+ document.getElementById('grand').textContent=sub?(sub+del)+' ₽':'0 ₽';
+ document.getElementById('cartItems').innerHTML=cart.length?cart.map(x=>`<div class="cart-item"><div class="cart-row"><span>${pizzas[x.i][0]} · ${x.s} см</span><span>${prices[x.s]*x.q} ₽</span></div><div class="qty"><button onclick="change(${x.i},${x.s},-1)">−</button><span>${x.q}</span><button onclick="change(${x.i},${x.s},1)">+</button></div></div>`).join(''):'<div class="cart-empty">Корзина пока пустая.<br>Выбери пиццу — зебра подождёт.</div>'
+}
+
+function openCart(){document.getElementById('cartPanel').classList.add('open');update()}
+function closeCart(){document.getElementById('cartPanel').classList.remove('open')}
+
+function formTemplate(){
+ return `<h2>ОФОРМЛЕНИЕ ДОСТАВКИ</h2>
+ <div class="notice">150 ₽ · бесплатно от 850 ₽ · ориентировочно до 1 часа · оплата наличными или переводом при получении</div>
+ <label>Имя<input id="name" autocomplete="name" required></label>
+ <label>Телефон<input id="phone" type="tel" autocomplete="tel" required placeholder="+7 ..."></label>
+ <label>Адрес доставки<input id="address" autocomplete="street-address" required placeholder="Улица, дом, квартира"></label>
+ <label>Комментарий<textarea id="comment" rows="3" placeholder="Подъезд, домофон, этаж и т.п."></textarea></label>
+ <label class="consent">
+   <input id="personalDataConsent" type="checkbox">
+   <span>Я согласен на обработку персональных данных в соответствии с <a href="/privacy.html" target="_blank" rel="noopener">Политикой обработки персональных данных</a>.</span>
+ </label>
+ <button class="checkout" onclick="submitOrder()">ЗАКАЗАТЬ</button>
+ <button class="cancel" onclick="closeCheckout()">ОТМЕНА</button>`
+}
+
+function openCheckout(){
+ if(!cart.length){alert('Добавьте пиццу в корзину.');return}
+ if(cart.reduce((a,x)=>a+prices[x.s]*x.q,0)<100){alert('Минимальная сумма заказа — 100 ₽.');return}
+ document.getElementById('form').innerHTML=formTemplate();
+ document.getElementById('modal').classList.add('open')
+}
+
 function closeCheckout(){document.getElementById('modal').classList.remove('open')}
+
 async function submitOrder(){
- const n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),a=document.getElementById('address').value.trim(),c=document.getElementById('comment').value.trim();
+ const consent=document.getElementById('personalDataConsent');
+
+ if(!consent || !consent.checked){
+   alert('Для оформления заказа необходимо дать согласие на обработку персональных данных.');
+   return;
+ }
+
+ const n=document.getElementById('name').value.trim(),
+ p=document.getElementById('phone').value.trim(),
+ a=document.getElementById('address').value.trim(),
+ c=document.getElementById('comment').value.trim();
+
  if(!n||!p||!a){alert('Заполните имя, телефон и адрес.');return}
- const sub=cart.reduce((z,x)=>z+prices[x.s]*x.q,0),del=sub>=850?0:150,total=sub+del,num=Math.floor(1000+Math.random()*9000);
- const items=cart.map(x=>({name:pizzas[x.i][0],size:x.s,quantity:x.q,lineTotal:prices[x.s]*x.q}));
- const button=document.querySelector('#form .checkout'); if(button){button.disabled=true;button.textContent='ОТПРАВЛЯЕМ...';}
+
+ const sub=cart.reduce((z,x)=>z+prices[x.s]*x.q,0),
+ del=sub>=850?0:150,
+ total=sub+del,
+ num=Math.floor(1000+Math.random()*9000);
+
+ const items=cart.map(x=>({
+   name:pizzas[x.i][0],
+   size:x.s,
+   quantity:x.q,
+   lineTotal:prices[x.s]*x.q
+ }));
+
+ const consentAt=new Date().toISOString();
+
+ const button=document.querySelector('#form .checkout');
+
+ if(button){
+   button.disabled=true;
+   button.textContent='ОТПРАВЛЯЕМ...';
+ }
+
  try{
-   const r=await fetch('/api/order',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({customer:n,phone:p,address:a,comment:c,items,subtotal:sub,delivery:del,total,orderNumber:num})});
+   const r=await fetch('/api/order',{
+     method:'POST',
+     headers:{'Content-Type':'application/json'},
+     body:JSON.stringify({
+       customer:n,
+       phone:p,
+       address:a,
+       comment:c,
+       items,
+       subtotal:sub,
+       delivery:del,
+       total,
+       orderNumber:num,
+       personalDataConsent:true,
+       consentAt
+     })
+   });
+
    const data=await r.json();
+
    if(!r.ok||!data.ok) throw new Error(data.error||'Не удалось отправить заказ');
+
    const list=items.map(x=>`${x.name} · ${x.size} см × ${x.quantity}`).join('<br>');
-   document.getElementById('form').innerHTML=`<div class="success"><div class="z">🦓</div><h2>ЗАКАЗ №${num} ПРИНЯТ</h2><p>Заказ отправлен. Оплата — наличными или переводом при получении.</p><div class="order-list">${list}<hr><b>Итого: ${total} ₽</b></div><p><b>Ориентировочно до 1 часа.</b></p><button class="checkout" onclick="finishOrder()">ГОТОВО</button></div>`;
+
+   document.getElementById('form').innerHTML=`
+   <div class="success">
+     <div class="z">🦓</div>
+     <h2>ЗАКАЗ №${num} ПРИНЯТ</h2>
+     <p>Заказ отправлен. Оплата — наличными или переводом при получении.</p>
+     <div class="order-list">
+       ${list}
+       <hr>
+       <b>Итого: ${total} ₽</b>
+     </div>
+     <p><b>Ориентировочно до 1 часа.</b></p>
+     <button class="checkout" onclick="finishOrder()">ГОТОВО</button>
+   </div>`;
  }catch(e){
    console.error(e);
    alert('Не удалось отправить заказ. Проверьте подключение и попробуйте ещё раз.');
-   if(button){button.disabled=false;button.textContent='ЗАКАЗАТЬ';}
+
+   if(button){
+     button.disabled=false;
+     button.textContent='ЗАКАЗАТЬ';
+   }
  }
 }
-function finishOrder(){cart=[];closeCheckout();document.getElementById('form').innerHTML=formTemplate();update()}
-document.querySelectorAll('.category-tabs .tab').forEach(b=>b.addEventListener('click',()=>{category=b.dataset.category;render()}));render();update();
+
+function finishOrder(){
+ cart=[];
+ closeCheckout();
+ document.getElementById('form').innerHTML=formTemplate();
+ update()
+}
+
+document.querySelectorAll('.category-tabs .tab').forEach(b=>b.addEventListener('click',()=>{
+ category=b.dataset.category;
+ render()
+}));
+
+render();
+update();
 </script>
-</body></html>
+</body>
+</html>
